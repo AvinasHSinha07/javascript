@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">Please visit Microsoft and Microsoft</p>
+    <button type="button" onclick="replace()">Try it</button>
+    <p id="concat"></p>
+    <script>
+        function replace(){
+            let text = document.getElementById("demo").innerHTML;
+            let newtext = document.getElementById("demo").innerHTML = text.replace(/Microsoft/g,"W3schools");
+        }
+    
+//         let text = "I love cats. Cats are very easy to love. Cats are very popular."
+// text = text.replaceAll("Cats","Dogs");
+// text = text.replaceAll("cats","dogs");
+
+// document.getElementById("demo").innerHTML = text;
+
+        //concat can be used instead of plus operator
+        let text1 = "Hello";
+        let text2 = "world";
+        let text3 = text1.concat("  &nbsp &nbsp    ",text2);
+        document.getElementById('concat').innerHTML = text3;
+
+        let t1 = "             world    ";
+        console.log(t1);
+        console.log(t1.length);
+        // t1= t1.trim();
+        // t1 = t1.trimStart();
+        // t1 = t1.trimRight();
+        console.log(t1);
+        console.log(t1.length);
+
+        //padstart
+        let text = "5";
+text = text.padStart(10,"");
+
+document.getElementById("demo").innerHTML = text;
+
+    </script>
+    
+</body>
+</html>

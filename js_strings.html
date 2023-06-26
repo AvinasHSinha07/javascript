@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="len"></p>
+    <p id="obs"></p>
+    <script>
+        let text = "Hello " ;
+        let answer1 = "It's alright";
+        let answer2 = "He is called 'Johnny'";
+        let answer3 = 'He is called "Johnny"';
+        document.getElementById("demo").innerHTML = text + "<br>" + answer1;
+
+        let lengthText = text.length + answer1.length ;
+        document.getElementById("len").innerHTML = lengthText ;
+
+        let stringobject = new String("this is an object string");
+        document.getElementById("obs").innerHTML = stringobject ;
+        console.log(typeof stringobject);
+
+        //comparing js objects always returns false
+        let x = "John";        // x is a string
+        let y = new String("John");  // y is an object
+        document.getElementById("demo").innerHTML = (x==y);
+
+    </script>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let x = 9;
+        // let x = 9; //cannot redeclare
+        let y  = 9.5;
+        console.log(typeof x)
+        console.log(typeof y)
+    
+        var a = 7 ;
+        a = 5;
+        console.log(a);
+
+        const b = 6;
+        b = 8;
+        console.log(b);
+        //cannot redeclare a var with let or const keyword
+        let k;
+    </script>
+
+<h2>JavaScript Hoisting</h2>
+<p>With <b>let</b>, you cannot use a variable before it is declared.</p>
+<p id="demo"></p>
+
+<script>
+try {
+  carName = "Saab";
+  let carName = "Volvo";
+}
+catch(err) {
+  document.getElementById("demo").innerHTML = err;
+}
+
+const pi ;
+
+</script>
+    
+</body>
+</html>
